@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">News List</h1>
+        <ul class="list-group mt-3">
+            <% news.forEach(article => { %>
+                <li class="list-group-item"><a href="/admin/news/edit/<%= article.id %>"><%= article.title %></a> | <form method="post" action="/admin/news/delete/<%= article.id %>"><button class="btn btn-danger">Delete</button></form></li>
+            <% }); %>
+        </ul>
+        <a href="/admin/news/create" class="btn btn-primary mt-3">Create New Article</a>
+    </div>
+</body>
+</html>
