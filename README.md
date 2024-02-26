@@ -13,13 +13,13 @@ News Portal adalah aplikasi web berbasis Node.js Express yang memungkinkan Anda 
 1. Clone repositori ini:
 
     ```bash
-    git clone https://github.com/username/news-portal.git
+    https://github.com/fajarjulyana/article-framework-nodejs.git
     ```
 
 2. Masuk ke direktori proyek:
 
     ```bash
-    cd news-portal
+    cd article-framework-nodejs
     ```
 
 3. Install dependensi:
